@@ -1,2 +1,0 @@
-tweepy==3.6.0
-openweathermapy==0.6.6
