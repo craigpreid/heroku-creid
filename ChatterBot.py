@@ -40,7 +40,7 @@ while(True):
     # Add 1 to the counter prior to re-running the loop
     counter = counter + 1
 
-    if counter = 110
+    if counter == 110
         break
 
 
