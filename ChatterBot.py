@@ -18,21 +18,21 @@ api = tweepy.API(auth, parser=tweepy.parsers.JSONParser())
 # Create a function that tweets
 
 
-def TweetOut(tweet_out):
+def TweetOut(tweet_out, num):
     api.update_status(
-        tweet_out)
+        tweet_out , num)
 
 
 # Create a function that calls the TweetOut function every minute
-counter = 0
+counter = 109
 
 # Infinite loop
 while(True):
 
-    tweet = input(f"Load a tweet: ")
-
     # Call the TweetQuotes function and specify the tweet number
-    TweetOut(tweet)
+    tweet = "This is my tweet"
+    TweetOut(tweet, counter)
+    print(tweet, counter)
 
     # Once tweeted, wait 60 seconds before doing anything else
     time.sleep(2)
@@ -40,8 +40,7 @@ while(True):
     # Add 1 to the counter prior to re-running the loop
     counter = counter + 1
 
-    stop = input (f"Stop???:")
-
-    if stop == "y":
+    if counter = 110
         break
-    
+
+
